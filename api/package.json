@@ -20,7 +20,8 @@
   "homepage": "https://github.com/AlekseiIvshin/RememberIt_API#readme",
   "dependencies": {
     "husky": "4.2.1",
-    "restify": "8.5.1"
+    "restify": "8.5.1",
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
     "eslint": "6.8.0"

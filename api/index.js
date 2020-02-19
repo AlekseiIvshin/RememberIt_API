@@ -5,6 +5,11 @@ const port = 3000;
 
 var server = restify.createServer();
 
+server.use(restify.plugins.queryParser());
+server.use(restify.plugins.bodyParser({
+    requestBodyOnGet: true
+}));
+
 routes.init(server);
 
 server.listen(port, function() {
