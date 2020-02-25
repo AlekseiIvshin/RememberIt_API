@@ -2,11 +2,12 @@ const userRepository = require('../repository/users');
 
 const createUser = (req, res, next) => {
     console.log(">>>")
-    const user = req.body.user;
+    const login = req.body.login;
+    const password = req.body.password;
 
-    const userId = userRepository.addUser(user);
+    const userId = userRepository.addUser({login, password});
 
-    console.log('>>>', userId, user)
+    console.log('>>>', userId, login, password)
 
     if (userId) {
         res.send({ response: "OK" });

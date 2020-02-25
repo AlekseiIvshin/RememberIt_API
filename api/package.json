@@ -21,6 +21,7 @@
   "dependencies": {
     "husky": "4.2.1",
     "restify": "8.5.1",
+    "restify-cors-middleware": "^1.1.1",
     "uuid": "^3.4.0"
   },
   "devDependencies": {
